@@ -1,0 +1,5 @@
+pandas
+pdoc3==0.7.4
+flake8==3.7.9
+pytest==5.3.5
+black
