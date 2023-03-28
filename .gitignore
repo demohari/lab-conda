@@ -130,3 +130,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 ./env
+scikit-prepare.ipynb
+scikit-learn.ipynb
+.gitignore
