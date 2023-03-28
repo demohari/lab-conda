@@ -10,9 +10,19 @@ repos:
     -   id: check-added-large-files
     -   id: check-ast
     -   id: check-json
-repos:
-- repo: https://github.com/pycqa/flake8.git
-  rev: 3.9.2
-  hooks:
-  - id: flake8
-    exclude: 'tests|env|docs'
+
+-   repo: https://github.com/pycqa/flake8.git
+    rev: 3.9.2
+    hooks:
+    -     id: flake8
+    exclude: 'demo.py|env|scikit-prepare.ipynb'
+
+-   repo: https://github.com/codespell-project/codespell
+    rev: v1.16.0
+    hooks:
+    -   id: codespell
+        name: codespell
+     #   description: Checks for common misspellings in text files.
+        entry: codespell --ignore-words ignore-spelling-words.txt readme.md
+        language: python
+        types: [text]
